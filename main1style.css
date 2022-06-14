@@ -1,0 +1,309 @@
+@import url(./indexstyle.css);
+
+
+
+/*상단*/
+
+.top .line_deco{
+    margin-bottom: 20px;
+}
+
+/*메뉴*/
+
+.menu{
+    display: flex;
+    margin: 10px auto 0px auto;
+    font-family: 'sunflower';
+}
+
+.menu ul{
+    border-top: 1.5px solid #3b3838;
+    border-bottom: 1.5px solid #3b3838;
+    list-style-type: none;
+
+	padding: 0px;
+	list-style-type: none;
+    display: flex;
+}
+
+.menu ul li{
+    float: left;
+	display: block;
+	width: 199px;
+	height: 25px;
+	text-align: center;
+	color: #3b3838;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 0px 0px 0px;
+    margin: 0px;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #3b3838;
+}
+
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4){
+    border-right: 1.5px solid #3b3838;
+}
+
+li:nth-child(5){
+    border: none;
+}
+
+/*메인박스1 - 스왑이미지 갤러리*/
+
+#mainBox1, #mainBox2, #mainBox3, #mainBox4{
+    display: flex;
+    width: 1000px;
+    margin: 30px auto auto;
+}
+
+.main_img{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+
+.main_img .change{
+    flex: 0.8;
+}
+
+.change img{
+    border-radius: 0px 15px 15px 0px;
+}
+
+.main_img .swapmenu{
+    flex: 0.2;
+    font-family: 'gyunggi-batang-bold';
+    color: #3b3838;
+    display: flex;
+    flex-direction: column;
+
+	list-style-type: none;
+}
+
+.swapmenu .swapmenu_title{
+    text-align:right;
+    font-size: 35px;
+    margin: 30px 10px 27px;
+    background-color:#f1f1f1;
+
+}
+
+.swapmenu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_img ul li {
+	height: 60px;
+	border-top: 1px solid #3b3838;
+    border-right: 1px solid #3b3838;
+    border-bottom: 1px solid #3b3838;
+    border-radius: 0px 10px 10px 0px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.main_img ul li:hover{
+    color: white;
+	background-color: #525023;;
+}
+
+/*메인박스2 - 이용안내*/
+
+
+#mainBox2 .itemBox1{
+    flex: 0.4;
+    margin: 0px auto;
+}
+
+#mainBox2 .itemBox1 .information_logo img{
+    width: 250px;
+    margin: 10px 0px 30px;
+}
+
+#mainBox2 .itemBox1 .information{
+    width: 350px;
+    border: 1px solid #3B3838;
+    margin-bottom: 3px;
+}
+
+.information .information_title{
+    margin: 20px 0px;
+    font-family: 'sunflower';
+    font-size: 25px;
+}
+
+.information .informationBox{
+    display: flex;
+    margin: 15px;
+    align-items: flex-end;    
+}
+
+.informationBox .information_text{
+    text-align: left;
+    font-family: "gyunggi-batang-bold";
+    color: #3b3838;
+    line-height: 130%;
+}
+
+.information_text span{
+    font-size: 20px;
+    color: #BF9000;
+}
+
+.informationBox .information_text h2{
+    font-size: 20px;
+    color:#7C2119 ;
+}
+
+.informationBox .information_img{
+margin-left: 30px;
+}
+
+.informationBox .information_img img{
+    width: 150px;
+}
+
+#mainBox2 .itemBox2{
+    flex: 0.7;
+}
+
+#mainBox2 .itemBox2 img{
+    width: 650px;
+margin-top: 75px;
+}
+
+
+/*메인박스3 - 수원화성 소개*/
+
+#mainBox3 .itemBox1{
+    flex: 0.6;
+    margin: 10px auto 0px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+#mainBox3 .itemBox1 .introduce_title{
+    margin: 10px 0px;
+    font-family: 'sunflower';
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#mainBox3 .itemBox1 .introduceBox{
+    border: 1px solid #3b3838;
+    padding: 10px;
+}
+
+#mainBox3 .itemBox1 img{
+    width: 300px;
+}
+
+#mainBox3 .itemBox1 .introduce_text{
+    text-align: left;
+    font-size: 14px;
+    font-family: 'gyunggi-title-L';
+    line-height: 160%;
+    padding: 10px;
+}
+
+#mainBox3 .itemBox2{
+flex: 0.4;
+text-align: right;
+}
+
+#mainBox3 .itemBox2 img{
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#mainBox3 .itemBox2 .introduce_text2{
+    font-family: 'gyunggi-batang-bold';
+    line-height: 135%;
+    font-size: 15px;
+}
+
+#mainBox3 .itemBox2 .introduce_text2 span{
+    color: #BF9000;
+font-size: 16px;
+}
+
+/*메인박스4*/
+
+#mainBox4{
+    margin-top: 70px;
+}
+
+.Tabs1_title{
+    flex: 0.15;
+    text-align: center;
+    font-family: 'sunflower';
+    font-size: 25px;
+    margin: auto;
+    line-height: 180%;
+    color: #3b3838;
+}
+
+#Tabs1{
+flex: 0.85;
+}
+
+#Tabs1 ul{
+    font-family: 'sunflower';
+    font-size: 16px;
+    color: #3B3838;
+
+}
+
+.tabs{
+    font-family: 'gyunggi-title-L';
+  
+}
+
+.tabs_img{
+    flex: 0.5;
+    width: 400px;
+    margin:15px 0px;
+}
+
+.tabs .tabs_img img{
+
+ width: 400px;
+ height: 270px;
+ border-radius: 20px;
+}
+
+.tabs_text{
+    flex: 0.5;
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.tabs_text h2{
+font-family: 'bookdu-chilsung';
+font-size: 40px;
+margin: 40px 0px 60px;
+color: #BF9000;
+}
+
+.tabs_btn{
+    margin: 20px 0px;
+    text-align: right;
+   
+}
+
+.tabs_btn img{
+    width: 150px;
+}

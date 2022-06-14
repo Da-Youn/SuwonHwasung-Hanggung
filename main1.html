@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main1style.css">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+    <title>수원화성</title>
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+    <script type="text/javascript">
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+
+        $(function () {
+            $("#Tabs1").tabs();
+        });
+
+    </script>
+</head>
+
+<body
+    onLoad="MM_preloadImages('images/main1_봄.jpg','images/main1_여름.jpg','images/main1_가을.jpg','images/main1_겨울.jpg','images/main_tabsbutton(클릭).png')">
+    <div class="top">
+        <a href="index.html"><img class="mainlogo" src="images/index_logo.png" alt=""></a>
+        <img class="line" src="images/line.png" alt="">
+        <img class="line_deco" src="images/pattern(반대).png" alt="">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#mainBox2">이용안내&nbsp;</a></li>
+            <li><a href="#mainBox3">수원화성 소개</a></li>
+            <li><a href="#mainBox4">수원화성 곳곳</a></li>
+            <li>축제/체험/코스</li>
+            <li>행궁동</li>
+        </ul>
+    </div>
+
+    <div id="mainBox1">
+        <div class="main_img">
+            <div class="change"><img src="images/main1_봄.jpg" alt="" width="850" height="500" id="mainevent" />
+            </div>
+            <div class="swapmenu">
+                <div class="swapmenu_title">수원<br>화성의<br>사계절</div>
+
+                <ul>
+
+                    <li onMouseOver="MM_swapImage('mainevent','','images/main1_봄.jpg',1)">
+                        <h2>봄</h2>
+                    </li>
+                    <li onMouseOver="MM_swapImage('mainevent','','images/main1_여름.jpg',1)">
+                        <h2>여름</h2>
+                    </li>
+                    <li onMouseOver="MM_swapImage('mainevent','','images/main1_가을.jpg',1)">
+                        <h2>가을</h2>
+                    </li>
+                    <li onMouseOver="MM_swapImage('mainevent','','images/main1_겨울.jpg',1)">
+                        <h2>겨울</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="mainBox2">
+        <div class="itemBox1">
+            <div class="information_logo">
+                <img src="images/main1_logo.png">
+            </div>
+            <div class="information">
+                <div class="information_title">이용안내</div>
+                <div class="informationBox">
+                    <div class="information_text">
+                        <p>
+                        <h2>관람시간</h2>
+                        하절기 (3월 - 10월)<br>
+                        <span>09 : 00 - 18 : 00<br></span>
+                        동절기 (11월 - 2월)<br>
+                        <span>09 : 00 - 17 : 00</span>
+                        </p>
+                        <p>
+                        <h2>요금 - 무료</h2>
+                        </p>
+                    </div>
+                    <div class="information_img">
+                        <img src="images/main1_icon(수원화성).png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="itemBox2">
+            <img src="images/main1_img.png" alt="">
+        </div>
+    </div>
+    <div id="mainBox3">
+        <div class="itemBox1">
+            <div class="introduceBox">
+                <div class="introduce_title">
+                    수원화성 소개
+                </div>
+                <img src="images/main1_introduce.png" alt="">
+                <div class="introduce_text">
+                    <p>
+                        수원화성은 정조의 효심이 축성의 근본이 되었을 뿐만 아니라
+                        당쟁에 의한 당파 정치 근절과<br>강력한 왕도정치의 실현을 위한
+                        원대한 정치적 포부가 담긴 정치 구상의 중심지로 지어진 것이며,<br>
+                        수도 남쪽의 국방 요새로 활용하기 위한 것이었습니다.<br>
+                        정조 18년(1794년)에 축성공사를 시작, 2년 뒤인 1796년에 완공했으며<br>
+                        정약용이 성을 설계하였습니다.</p>
+                    <p>
+                        수원화성은 거중기, 활차, 녹로 등 신기재의 발명과 활용,<br>
+                        동서양 축성술을 집약한 축성방법 등 18세기 과학과 건축, <br>예술을 살필 수 있는
+                        대한민국 성곽 건축사상 가장 독보적인 건축물로 평가받고 있습니다.</p>
+                    <p>「수원화성」은 방어 기능과
+                        성벽안에 갖추어진 4개의 성문을 비롯해
+                        각기 다른 모양과 특성을 지닌<br> 건축물의 가치를 인정받아 1997년에 유네스코 세계문화유산으로 지정되었습니다.</p>
+                    ‘대한민국 으뜸 관광 명소’,<br>‘CNN선정 한국에서 가봐야 할 아름다운 곳 50곳’,<br>
+                    2012 한국관광을 빛낸 ‘한국관광의 별’ 로 선정되는 등<br> 한국 전통역사문화의 아이콘으로 떠오르며 세계적인 관광명소로 거듭나고 있습니다.
+
+                </div>
+            </div>
+
+        </div>
+        <div class="itemBox2">
+            <img src="images/main1_introduce_img.jpg" alt="">
+            <div class="introduce_text2">
+                호위를 엄하게 하려는 것도 아니요,<br>
+                변란을 막기 위한 것도 아니다.<br>
+                여기에는 나의 깊은 뜻이 있다.<br>
+                장차 내 뜻이 성취되는 날이 올 것이다.<br><br>
+                <span>조선 정조, 《정조실록》 15년(1791)</span>
+            </div>
+        </div>
+    </div>
+    <div id="mainBox4">
+        <div class="Tabs1_title">수원화성<br>곳곳</div>
+        <div id="Tabs1">
+            <ul>
+                <li><a href="#tabs-1">수원화성</a></li>
+                <li><a href="#tabs-2">장안문</a></li>
+                <li><a href="#tabs-3">팔달문</a></li>
+                <li><a href="#tabs-4">창룡문</a></li>
+                <li><a href="#tabs-5">화서문</a></li>
+                <li><a href="#tabs-6">서장대</a></li>
+                <li><a href="#tabs-7">화홍문</a></li>
+                <li><a href="#tabs-8">방화수류정</a></li>
+                <li><a href="#tabs-9">효원의 종</a></li>
+            </ul>
+            <div class="tabs" id="tabs-1">
+                <div class="tabs_img"> <img src="./images/main1_수원화성.jpg"></div>
+                <div class="tabs_text">
+                    <h2>수원화성</h2>
+                    수원화성은 조선왕조 제22대 정조대왕이 세자에 책봉되었으나 당쟁에 휘말려 왕위에 오르지 못하고 뒤주 속에서 생을 마감한 아버지 사도세자의 능침을 양주 배봉산에서 조선 최대의
+                    명당인
+                    수원 화산으로 천봉하고 화산 부근에 있던 읍치를 수원 팔달산 아래 지금의 위치로 옮기면서 축성되었습니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/5B1voLse" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn1','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-2">
+                <div class="tabs_img"> <img src="./images/main1_장안문.jpg"></div>
+                <div class="tabs_text">
+                    <h2>장안문</h2>
+                    장안문은 화성의 북문이자 정문입니다.<br>
+                    장안이라는 말은 수도라는 뜻으로 또 다른 서울이라는 의미를 담고 있습니다.
+                    장안문이 정문이라는 것은 왕이 수도인 한양에서 수원으로 들어오는 문으로 쓰였기 때문입니다.
+                    <br>서울의 숭례문(崇禮門)보다 크기가 큰 것이 특징입니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/GmF3rgre" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn2','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn2"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-3">
+                <div class="tabs_img"> <img src="./images/main1_팔달문.jpg"></div>
+                <div class="tabs_text">
+                    <h2>팔달문</h2>
+                    보물 제402호<br>
+                    조선 후기인 1794년에 세운 화성의 남쪽 문으로,<br>문의 이름은 사방팔방으로 길이 열린다는 의미를 담고 있습니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/5aVv6Ljd" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn3','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-4">
+                <div class="tabs_img"> <img src="./images/main1_창룡문.jpg"></div>
+                <div class="tabs_text">
+                    <h2>창룡문</h2>
+                    화성의 동문으로 규모와 형식이 화서문과 비슷합니다.<br>
+                    주목할 것은 성문 왼쪽에 있는 실명판입니다.<br>
+                    화강석 벽을 다듬어서 글씨를 새겼는데 지금도 선명하게 남아있습니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/5lZfJ8Oo" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn4','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-5">
+                <div class="tabs_img"> <img src="./images/main1_화서문.jpg"></div>
+                <div class="tabs_text">
+                    <h2>화서문</h2>
+                    보물 제403호<br>
+                    화성의 서문으로 보물 제403호입니다.<br>
+                    석축으로 된 무지개 문 위에 단층 문루(門樓)가 세워져 있으며<br> 팔달문의 옹성과는 달리 문 앞에는 한쪽이 터진 옹성이 있습니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/GDcQaDu4" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn5','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn5"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-6">
+                <div class="tabs_img"> <img src="./images/main1_서장대.jpg"></div>
+                <div class="tabs_text">
+                    <h2>서장대</h2>
+                    장대란 성곽 일대를 한눈에 바라보며 화성에 주둔했던<br> 장용외영 군사들을 지휘하던 지휘소입니다.<br>
+                    화성에는 서장대와 동장대 두 곳이 있는데, 그 중 서장대는 팔달산 정상에 있으며 위에 올라가서 굽어 보면 팔방으로 통합니다.
+
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/FzHJIYqI" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn6','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn6"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-7">
+                <div class="tabs_img"> <img src="./images/main1_화홍문.jpg"></div>
+                <div class="tabs_text">
+                    <h2>화홍문</h2>
+                    화성에는 수원천이 남북으로 가로질러 흐르는데<br> 성의 연결 부분에는 수문을 설치하여 북쪽에는 북수문, 남쪽에는 남수문을 두었습니다.
+                    화홍문은 화성의 북수문으로 7개의 무지개 모양의 수문이 설치되어 있습니다
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/xyUjU3dr" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn7','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn7"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-8">
+                <div class="tabs_img"> <img src="./images/main1_방화수류정.jpg"></div>
+                <div class="tabs_text">
+                    <h2>방화수류정</h2>
+                    보물 제1709호<br>
+                    “꽃을 찾고 버들을 따라 노닌다(訪花隨柳)”라는 뜻을 지닌 방화수류정은 화성에서 가장
+                    뛰어나며 다른 성곽에서는 볼 수 없는 독창적인 건축물로 평가되고 있습니다.
+                    주변을 감시하고 군사를 지휘하는 지휘소와 주변 자연환경과 조화를 이루는 정자의 기능을 함께 지니고 있습니다. 동북각루라고도 불립니다.
+                    <div class="tabs_btn">
+                        <a href="http://naver.me/IgTNT9Zq" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn8','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn8"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs" id="tabs-9">
+                <div class="tabs_img"> <img src="./images/main1_효원의종.jpg"></div>
+                <div class="tabs_text">
+                    <h2>효원의 종</h2>
+                    팔달산 정상에 있는 효원의 종은 유서 깊은 효원(孝園)의 도시이자 날로 발전하는 수원의 모습을 나타내는 상징으로 그 동안 주요 행사 때 마다 타종하였습니다. <div
+                        class="tabs_btn">
+                        <a href="http://naver.me/x6PtpZHc" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('tabs_btn9','','images/main_tabsbutton(클릭).png',1)"><img
+                                src="images/main_tabsbutton.png" alt="" id="tabs_btn9"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="bottom">
+        <img class="line_deco" src="images/pattern.png" alt="">
+
+        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)
+            전화:1899-3300<br>Copyrightⓒ 2016 SUWON CITY All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+
+</html>

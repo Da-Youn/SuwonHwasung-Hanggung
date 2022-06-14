@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'bookdu-chilsung';
+    src: url('./fonts/a북두칠성.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sunflower';
+    src: url('./fonts/a해바라기.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gyunggi-batang-bold';
+    src: url('./fonts/경기천년바탕_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gyunggi-batang-regular';
+    src: url('./fonts/경기천년바탕_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gyunggi-title-L';
+    src: url('./fonts/경기천년제목_Light.ttf') format('truetype');
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*상단*/
+
+.top{
+display: flex;
+flex-direction: column;
+margin: 0px auto 0px auto;
+}
+.top a{
+    margin: 0px auto 10px auto;
+}
+.top a .mainlogo{
+    width: 500px;
+}
+
+.top .line{
+    width: 1000px;
+}
+
+.top .line_deco{
+    width: 1000px;
+    margin-bottom: 80px;
+}
+
+/*중앙*/
+
+.mainBox1, .mainBox2{
+    display: flex;
+    width: 1000px;
+    margin: -4px auto 0px auto;
+}
+
+
+.itemBox1{
+    flex: 0.25;
+    text-align: center;
+}
+
+.itemBox1 .main_text1{
+    font-family: 'bookdu-chilsung' ;
+    font-size: 60px;
+    color: #525023;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+
+.itemBox1 .main_text2{
+    font-family: 'bookdu-chilsung' ;
+    font-size: 60px;
+    color: #7a211a;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.itemBox1 .main_btn{
+    width: 150px;
+}
+
+.itemBox2{
+    flex: 0.75;
+}
+
+.itemBox2 img{
+    width: 750px;
+
+}
+
+
+/*하단*/
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 0px auto;
+}
+
+.bottom .line_deco{
+    margin-top: 80px;
+    width: 1000px;
+}
+
+.bottom .line{
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.bottom footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    background-color: black;
+    font-size: 12px;
+    line-height: 180%;
+    color: white;
+    text-align: center;
+    font-family: 'sunflower';
+}
