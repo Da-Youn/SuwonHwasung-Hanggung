@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main1style.css">
+    <link rel="stylesheet" href="main2style.css">
     <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
     <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
     <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
@@ -19,10 +19,6 @@
             }
         }
 
-        function MM_swapImgRestore() { //v3.0
-            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
-        }
-
         function MM_findObj(n, d) { //v4.01
             var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
                 d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
@@ -30,11 +26,6 @@
             if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
             for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
             if (!x && d.getElementById) x = d.getElementById(n); return x;
-        }
-
-        function MM_swapImage() { //v3.0
-            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
-                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
         }
 
         $(function () {
@@ -59,40 +50,91 @@
             <li>행궁동</li>
         </ul>
     </div>
+    <div class="information_logo">
+        <img src="images/main2_logo.png">
+    </div>
     <div id="mainBox2">
         <div class="itemBox1">
-            <div class="information_logo">
-                <img src="images/main2_logo.png">
-            </div>
+
             <div class="information">
                 <div class="information_title">이용안내</div>
                 <div class="informationBox">
-                    <div class="information_text">
-                        <p>
-                        <h2>관람시간</h2>
-                        하절기 (3월 - 10월)<br>
-                        <span>09 : 00 - 18 : 00<br></span>
-                        동절기 (11월 - 2월)<br>
-                        <span>09 : 00 - 17 : 00</span>
-                        </p>
-                        <p>
-                        <h2>요금</h2>
-                        개인<br>
-                        <span>어른 1,500원/청소년 및 군인 1,000원/어린이 700원<br></span>
-                        단체(20인 이상)<br>
-                        <span>어른 1,200원/청소년 및 군인 800원/어린이 500원</span>
-                        </p>
+                    <div class="informationBox_top">
+                        <div class="information_text">
+                            <p>
+                            <h2>관람시간</h2>
+                            하절기 (3월 - 10월)<br>
+                            <span>09 : 00 - 18 : 00<br></span>
+                            동절기 (11월 - 2월)<br>
+                            <span>09 : 00 - 17 : 00</span>
+                            </p>
+                            <p>
+                        </div>
+                        <div class="information_img">
+                            <img src="images/main2_icon(화성행궁).png" alt="">
+                        </div>
                     </div>
-                    <div class="information_img">
-                        <img src="images/main2_icon(화성행궁).png" alt="">
+                    <div class="informationBox_bottom">
+                        <div class="information_text">
+                            <h2>요금</h2>
+                            개인<br>
+                            <span>어른 1,500원/청소년 및 군인 1,000원/어린이 700원<br></span>
+                            단체(20인 이상)<br>
+                            <span>어른 1,200원/청소년 및 군인 800원/어린이 500원</span>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
         <div class="itemBox2">
-            <img src="images/main1_img.png" alt="">
+            <img src="images/main2_img.png" alt="">
         </div>
+    </div>
+    <div id="mainBox3">
+        <div class="itemBox2">
+            <img src="images/main2_introduce_img1.jpg" alt="">
+            <img src="images/main2_introduce_img2.jpg" alt="">
+        </div>
+        <div class="itemBox1">
+            <div class="introduceBox">
+                <div class="introduce_title">
+                    화성행궁 소개
+                </div>
+                <img src="images/main2_introduce.png" alt="">
+                <div class="introduce_text">
+                    <p>수원화성과 함께 빼놓을 수 없는 것이 건축의 백미로 꼽히는 ‘수원 화성행궁’ 입니다.<br>
+                        화성행궁은 임금님의 행차 시 거처하던 임시 궁궐로 정조 이외에도 순조, 헌종, 고종 등 역대 왕들이<br> 화성 행궁을 찾아 이곳에 머물렀습니다. 모두 576칸이나 되는
+                        화성 행궁은 조선 시대에 건립된 행궁 중 규모가 가장 크며, 수원 화성과 함께 정치적, 군사적 의미를 가지고 있는 건축물입니다. <br>
+                        국내 최대의 규모로서, 아름다움과 웅장함이 깃들어 있습니다.<br></p>
+                    <p>
+                        정조는 1789년 10월, 아버지 사도세자의 무덤인 현륭원을 옮긴 이후 1800년(정조 24년) 1월까지
+                        12년간 13차례에 걸쳐 수원행차를 거행했으며, 이때마다 화성행궁에 머물렀습니다.
+                        1795년에는 화성행궁 봉수당에서 어머니 혜경궁 홍씨의 환갑을 기념하는 진찬연을 여는 등 여러 가지 행사를 거행하였습니다.<br></p>
+                    <p>
+                        화성행궁은 평상시에는 화성유수부 유수가 집무하는 관청으로서 활용되었습니다.<br>
+                        그러나, 일제강점기 이후 갖가지 용도의 건물로 이용되면서, 그 모습을 잃게 되었습니다.<br>
+                        화성축성 200주년인 1996년부터 복원 공사를 시작해 2003년 일반인에게 공개하였습니다.</p>
+                    <p>
+                        화성 행궁은 조선 후기 정치와 군사 및 사회 문화의 변화를 살필 수 있는 중요한 유산이며,<br>
+                        발굴 조사 및 복원 정비 사업을 통해 조선 시대 행궁의 모습을 재현할 수 있게 된
+                        중요한 문화 유적으로 역사적, 학술적 가치가 큰 우리 문화재입니다.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="bottom">
+        <img class="line_deco" src="images/pattern.png" alt="">
+
+        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)
+            전화:1899-3300<br>Copyrightⓒ 2016 SUWON CITY All Rights Reserved.
+        </footer>
     </div>
 </body>
 

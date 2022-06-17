@@ -1,2 +1,53 @@
 @import url(./indexstyle.css);
-@import url(./main2style.css);
+@import url(./main1style.css);
+
+/*메인박스2 - 이용안내*/
+
+body{
+    text-align: center;
+}
+
+.information_logo img{
+    width: 250px;
+    margin: 10px 0px 0px;
+}
+
+
+.information .informationBox{
+    display: flex;
+    margin: 15px;
+    align-items: flex-start;    
+    flex-direction: column;
+}
+
+.informationBox_top{
+    display: flex;
+}
+
+.informationBox_bottom span{
+    color: gray;
+    font-size: 15px;
+    margin:15px auto;
+}
+
+#mainBox2 .itemBox2 img{
+    width: 650px;
+}
+
+/*메인박스3 - 수원화성 소개*/
+
+#mainBox3 .itemBox1{
+    flex: 0.65;
+    padding: 20px 0px 0px 10px;
+}
+
+#mainBox3 .itemBox2{
+    flex: 0.35;
+padding-top: 30px;
+    margin: auto;
+}
+#mainBox3 .itemBox2 img{
+    width: 400px;
+    height: 286px;
+    margin-top: 0px;
+}
