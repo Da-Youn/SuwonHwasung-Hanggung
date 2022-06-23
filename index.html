@@ -4,16 +4,25 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./indexstyle.css">
-    <title>intex</title>
+    <title>수원화성행궁</title>
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+    <script type="text/javascript">
+        function MM_DW_effectFade(obj, method, effect, speed) {
+            obj[method](effect, {}, speed);
+        }
+    </script>
 </head>
 
 <body>
+    <div id="popup"><img src="./images/popup.png" width="500px"
+            onClick="MM_DW_effectFade($('#popup'),'hide','fade',1000)" /></div>
     <div class="top">
-        <a href="./index.html"><img class="mainlogo" src="images/index_logo.png" alt=""></a>
+        <a href="./index.html"><img id="mainlogo" src="images/index_logo.png" alt=""></a>
         <img class="line" src="./images/line.png" alt="">
         <img class="line_deco" src="./images/pattern(반대).png" alt="">
     </div>
-    <div class="mainBox1">
+    <div class="main Box1">
         <div class="itemBox1">
             <div class="main_text1">
                 수원<br>화성
@@ -26,7 +35,7 @@
             <img src="./images/index_img1.jpg" alt="">
         </div>
     </div>
-    <div class="mainBox2">
+    <div class="main Box2">
         <div class="itemBox2">
             <img src="./images/index_img2.jpg" alt="">
         </div>
@@ -42,8 +51,8 @@
     <div class="bottom">
         <img class="line_deco" src="./images/pattern.png" alt="">
 
-        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)
-            전화:1899-3300<br>Copyrightⓒ 2016 SUWON CITY All Rights Reserved.
+        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16261) 경기도 수원시 팔달구 남창동 행궁로 11
+            전화:1234-5678<br>Copyrightⓒ SUWON Hwasung Hanggung All Rights Reserved.
         </footer>
     </div>
 

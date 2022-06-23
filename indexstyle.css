@@ -13,11 +13,6 @@
 }
 
 @font-face {
-    font-family: 'gyunggi-batang-regular';
-    src: url('./fonts/경기천년바탕_Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'gyunggi-title-L';
     src: url('./fonts/경기천년제목_Light.ttf') format('truetype');
 }
@@ -38,14 +33,12 @@ margin: 0px auto 0px auto;
 .top a{
     margin: 0px auto 10px auto;
 }
-.top a .mainlogo{
+.top a #mainlogo{
     width: 500px;
 }
-
 .top .line{
     width: 1000px;
 }
-
 .top .line_deco{
     width: 1000px;
     margin-bottom: 80px;
@@ -53,7 +46,7 @@ margin: 0px auto 0px auto;
 
 /*중앙*/
 
-.mainBox1, .mainBox2{
+.main{
     display: flex;
     width: 1000px;
     margin: -4px auto 0px auto;
@@ -128,4 +121,10 @@ margin: 0px auto 0px auto;
     color: white;
     text-align: center;
     font-family: 'sunflower';
+}
+
+#popup {
+	position: absolute;
+top : 150px;
+right: 50px;
 }

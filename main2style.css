@@ -1,17 +1,25 @@
 @import url(./indexstyle.css);
 @import url(./main1style.css);
 
-/*메인박스2 - 이용안내*/
 
 body{
     text-align: center;
 }
 
-.information_logo img{
+.logo img{
     width: 250px;
-    margin: 10px 0px 0px;
+    margin: 20px 0px 0px;
 }
 
+/*메인박스1 - 이용안내*/
+
+#container1{
+    margin-top: 30px;
+}
+
+.information{
+    margin-top: 6px;
+}
 
 .information .informationBox{
     display: flex;
@@ -20,34 +28,129 @@ body{
     flex-direction: column;
 }
 
-.informationBox_top{
-    display: flex;
+.informationBox .top{
+display: flex;
+flex-direction: row;
+margin-bottom: 5px;
 }
 
-.informationBox_bottom span{
+.bottom span{
     color: gray;
     font-size: 15px;
-    margin:15px auto;
+    padding: 10px auto;
 }
 
-#mainBox2 .itemBox2 img{
+#container1 .itemBox2{
+    margin: auto 0px;
+}
+
+#container1 .itemBox2 img{
     width: 650px;
+    margin: 0px;
 }
 
-/*메인박스3 - 수원화성 소개*/
+/*메인박스2 - 수원화성 소개*/
 
-#mainBox3 .itemBox1{
+#container2 .itemBox1{
     flex: 0.65;
-    padding: 20px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 
-#mainBox3 .itemBox2{
+#container2 .itemBox2{
     flex: 0.35;
-padding-top: 30px;
-    margin: auto;
 }
-#mainBox3 .itemBox2 img{
+#container2 .itemBox2 img{
     width: 400px;
     height: 286px;
     margin-top: 0px;
+}
+
+#container2 .itemBox2 img:nth-child(2){
+    margin: 2px 0px 0px;
+}
+
+/*메인박스3 - 화성행궁 지도*/
+#container3 .title{
+    flex: 0.25;
+    font-size: 35px;
+}
+
+#container3 .title img{
+    width: 180px;
+
+}
+
+#container3 .mapImg {
+    flex: 0.75;
+    width: 700px;
+    border-radius: 20px;
+    border: 1px solid #3b3838;
+}
+
+/*메인박스4 - 화성행궁 스탬프투어*/
+
+#container4 img{
+    width: 600px;
+    height: 471px;
+    border: 1px solid #3b3838;
+    border-radius: 20px;
+}
+
+#container4 .stamptourBox{
+    width: 400px;
+    margin-left:20px;
+    text-align: center;
+}
+
+#container4 .stamptourBox .stamptour{
+    padding: 10px;
+}
+
+#container4 .stamptourBox .stamptour .title{
+    color: #7C2119;
+    margin: 10px 0px;
+}
+
+/*메인박스5 - 화성행궁 야간개장*/
+
+#container5 .festivalBox .title span{
+    font-size: 25px;
+    color: #BF9000;
+}
+
+.festivalBox .content .video{
+    flex: 0.5;
+    padding-top: 10px;
+    margin: auto;
+}
+
+#container5 .festivalBox .title p{
+    text-align: center;
+    }
+
+.festivalBox .info{
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.festivalBox .info table{
+    margin: 10px 0px 20px;
+}
+
+.festivalBox .info table caption{
+    color: #7C2119;
+}
+
+#container5 .festivalBox .info th{background-color: #f1f1f1;}
+
+#container5 .festivalBox .info th,
+#container5 .festivalBox .info td{
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.festivalBox .info p{
+padding-left: 20px;
+font-size: 13px;
+text-align: left;
 }

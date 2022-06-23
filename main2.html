@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main2style.css">
     <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-    <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.theme.min2.css" rel="stylesheet" type="text/css">
     <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
     <title>화성행궁</title>
     <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
@@ -27,40 +27,34 @@
             for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
             if (!x && d.getElementById) x = d.getElementById(n); return x;
         }
-
-        $(function () {
-            $("#Tabs1").tabs();
-        });
-
     </script>
 </head>
 
 <body>
     <div class="top">
-        <a href="index.html"><img class="mainlogo" src="images/index_logo.png" alt=""></a>
+        <a href="index.html"><img id="mainlogo" src="images/index_logo.png" alt=""></a>
         <img class="line" src="images/line.png" alt="">
         <img class="line_deco" src="images/pattern(반대).png" alt="">
     </div>
     <div class="menu">
         <ul>
-            <li><a href="#mainBox2">이용안내&nbsp;</a></li>
-            <li><a href="#mainBox3">화성행궁 소개</a></li>
-            <li><a href="#mainBox4">화성행궁 지도</a></li>
-            <li>오시는 길</li>
-            <li>행궁동</li>
+            <li><a href="#container1">이용안내&nbsp;</a></li>
+            <li><a href="#container2">화성행궁 소개</a></li>
+            <li><a href="#container3">화성행궁 지도</a></li>
+            <li><a href="#container4">화성행궁 스탬프투어</a></li>
+            <li><a href="#container5">달빛정담</a></li>
         </ul>
     </div>
-    <div class="information_logo">
+    <div class="logo">
         <img src="images/main2_logo.png">
     </div>
-    <div id="mainBox2">
+    <div class="main" id="container1">
         <div class="itemBox1">
-
             <div class="information">
-                <div class="information_title">이용안내</div>
+                <div class="title">이용안내</div>
                 <div class="informationBox">
-                    <div class="informationBox_top">
-                        <div class="information_text">
+                    <div class="top">
+                        <div class="text">
                             <p>
                             <h2>관람시간</h2>
                             하절기 (3월 - 10월)<br>
@@ -70,12 +64,10 @@
                             </p>
                             <p>
                         </div>
-                        <div class="information_img">
-                            <img src="images/main2_icon(화성행궁).png" alt="">
-                        </div>
+                        <img src="images/main2_icon(화성행궁).png" alt="">
                     </div>
-                    <div class="informationBox_bottom">
-                        <div class="information_text">
+                    <div class="bottom">
+                        <div class="text">
                             <h2>요금</h2>
                             개인<br>
                             <span>어른 1,500원/청소년 및 군인 1,000원/어린이 700원<br></span>
@@ -83,28 +75,26 @@
                             <span>어른 1,200원/청소년 및 군인 800원/어린이 500원</span>
                             </p>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="itemBox2">
             <img src="images/main2_img.png" alt="">
         </div>
     </div>
-    <div id="mainBox3">
+    <div class="main" id="container2">
         <div class="itemBox2">
             <img src="images/main2_introduce_img1.jpg" alt="">
             <img src="images/main2_introduce_img2.jpg" alt="">
         </div>
         <div class="itemBox1">
             <div class="introduceBox">
-                <div class="introduce_title">
+                <div class="title">
                     화성행궁 소개
                 </div>
                 <img src="images/main2_introduce.png" alt="">
-                <div class="introduce_text">
+                <div class="text">
                     <p>수원화성과 함께 빼놓을 수 없는 것이 건축의 백미로 꼽히는 ‘수원 화성행궁’ 입니다.<br>
                         화성행궁은 임금님의 행차 시 거처하던 임시 궁궐로 정조 이외에도 순조, 헌종, 고종 등 역대 왕들이<br> 화성 행궁을 찾아 이곳에 머물렀습니다. 모두 576칸이나 되는
                         화성 행궁은 조선 시대에 건립된 행궁 중 규모가 가장 크며, 수원 화성과 함께 정치적, 군사적 의미를 가지고 있는 건축물입니다. <br>
@@ -121,19 +111,101 @@
                         화성 행궁은 조선 후기 정치와 군사 및 사회 문화의 변화를 살필 수 있는 중요한 유산이며,<br>
                         발굴 조사 및 복원 정비 사업을 통해 조선 시대 행궁의 모습을 재현할 수 있게 된
                         중요한 문화 유적으로 역사적, 학술적 가치가 큰 우리 문화재입니다.</p>
-
-
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="container3">
+        <div class="title">화성행궁<br>지도
+            <a href="http://www.ubestar.com/kor/gyeonggi/suwon/main/suwon_tour03.html"><img
+                    src="./images/main2_mapbtn.png" alt=""></a>
+        </div>
+        <img class="mapImg" src="./images/main2_map.jpg" alt="">
+    </div>
+    <div class="main" id="container4">
+        <img src="./images/main2_stamptour.png" alt="">
+        <div class="stamptourBox">
+            <div class="title">
+                화성행궁<br>
+                스탬프 투어
+            </div>
+            <div class="stamptour">
+                <div class="title">
+                    이용 안내
+                </div>
+                <ul>
+                    <li>1.</li>
+                    스탬프 용지를 매표소에서 500원에 구매하세요.
+                    <li>2.</li>
+                    화성행궁 곳곳에 숨어 있는 스탬프는 10개입니다.
+                    <li>3.</li>
+                    스탬프를 찾으면<br>
+                    체험지를 네모 상자에 맞게 넣으세요.
+                    <li>4.</li>
+                    여섯군데 스탬프를 찍으면 기념품 완성!!<br>코팅을 하면 오랫동안 보관할 수 있어요.
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="container5">
+        <div class="festivalBox">
+            <div class="title">
+                2022 화성행궁 야간개장 <span> 달빛정담</span>
+                <p>낮보다 더 아름다운 수원화성의 밤,<br>달빛 아래 다정하게 얘기를 나눌 수 있는 특별한 시간.
+                    도심 속 아름다운 궁궐의 야경과 고즈넉한 분위기,<br> 달빛과 초롱빛을 따라 거닐다보면 행궁 곳곳의 이야기를 만날 수 있습니다</p>
+            </div>
+            <div class="content">
+                <div class="video"><iframe width="500" height="400"
+                        src="https://www.youtube-nocookie.com/embed/6g2nUaeG6ng" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="info">
+                    <table>
+                        <caption>관람안내</caption>
+                        <tbody>
+                            <tr>
+                                <th>관람기간</th>
+                                <td>2022. 5. 1.(일) ~ 10. 30.(일) 기간 중<br>매주 수~일요일</td>
+                            </tr>
+                            <tr>
+                                <th>관람시간</th>
+                                <td>18:00~21:30 (21:00 매표 및 입장 마감)</td>
+                            </tr>
+                            <tr>
+                                <th>관람장소</th>
+                                <td>화성행궁, 화령전
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>요금</th>
+                                <td>- 개인 -<br>어른 1,500원/청소년 및 군인 1,000원/어린이 700원</td>
+                            </tr>
+                            <tr>
+                                <th>매표장소</th>
+                                <td> 화성행궁 매표소</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> ※ 화성행궁 야간개장의 경우 문화가 있는 날 무료입장 불가<br>
+                        ※ 한복(개량한복 포함) 착용 시 무료입장<br>
+                        ※ 만 6세 이하의 미취학 이동 무료입장<br>
+                        ※ 만 65세 이상 무료입장<br>
+                        ※ 「장애인복지법」 제2조에 따른 장애인등록증 및<br> 장애인복지카드 소지자(1~3급 보호자 1인 포함, 4~6급 본인 한정) 무료입장
+                    </p>
                 </div>
             </div>
 
         </div>
-
+    </div>
+    <div class="goTopBtn">
+        <a href="#mainlogo"><img src="./images/goTopbtn.png" alt=""></a>
     </div>
     <div class="bottom">
         <img class="line_deco" src="images/pattern.png" alt="">
-
-        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)
-            전화:1899-3300<br>Copyrightⓒ 2016 SUWON CITY All Rights Reserved.
+        <footer>본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반 시 정보통신망법에 의해 처벌됩니다.<br>(우편번호:16261) 경기도 수원시 팔달구 남창동 행궁로 11
+            전화:1234-5678<br>Copyrightⓒ SUWON Hwasung Hanggung All Rights Reserved.
         </footer>
     </div>
 </body>

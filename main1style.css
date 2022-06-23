@@ -20,7 +20,6 @@
     border-top: 1.5px solid #3b3838;
     border-bottom: 1.5px solid #3b3838;
     list-style-type: none;
-
 	padding: 0px;
 	list-style-type: none;
     display: flex;
@@ -37,7 +36,6 @@
 	font-weight: bold;
 	padding: 10px 0px 0px 0px;
     margin: 0px;
-    
 }
 
 .menu ul li a{
@@ -45,10 +43,10 @@
     color: #3b3838;
 }
 
-li:nth-child(1),
-li:nth-child(2),
-li:nth-child(3),
-li:nth-child(4){
+.menu ul li:nth-child(1),
+.menu ul li:nth-child(2),
+.menu ul li:nth-child(3),
+.menu ul li:nth-child(4){
     border-right: 1.5px solid #3b3838;
 }
 
@@ -56,29 +54,42 @@ li:nth-child(5){
     border: none;
 }
 
-/*메인박스1 - 스왑이미지 갤러리*/
+/* 기본 설정 - 메인, 타이틀*/
 
-#mainBox1, #mainBox2, #mainBox3, #mainBox4{
+.main{
+    display: flex;
+    width: 1000px;
+    margin: 70px auto auto;
+}
+
+.title{
+    font-family: 'sunflower';
+    font-size: 25px;
+}
+
+/*메인  - 스왑이미지 갤러리*/
+
+#swap{
     display: flex;
     width: 1000px;
     margin: 30px auto auto;
 }
 
-.main_img{
+.swapImg{
     display: flex;
     flex-direction: row;
     width: 1000px;
 }
 
-.main_img .change{
+.swapImg .change{
     flex: 0.8;
 }
 
-.change img{
+.swapImg .change img{
     border-radius: 0px 15px 15px 0px;
 }
 
-.main_img .swapmenu{
+.swapImg .swapmenu{
     flex: 0.2;
     font-family: 'gyunggi-batang-bold';
     color: #3b3838;
@@ -88,10 +99,10 @@ li:nth-child(5){
 	list-style-type: none;
 }
 
-.swapmenu .swapmenu_title{
+.swapmenu .title{
     text-align:right;
     font-size: 35px;
-    margin: 30px 10px 27px;
+    margin: 30px 10px 10px;
     background-color:#f1f1f1;
 
 }
@@ -102,7 +113,7 @@ li:nth-child(5){
     padding: 0px;
 }
 
-.main_img ul li {
+.swapImg ul li {
 	height: 60px;
 	border-top: 1px solid #3b3838;
     border-right: 1px solid #3b3838;
@@ -112,104 +123,99 @@ li:nth-child(5){
 	margin-top: 20px;
 }
 
-.main_img ul li:hover{
+.swapImg ul li:hover{
     color: white;
 	background-color: #525023;;
 }
 
-/*메인박스2 - 이용안내*/
+/*메인박스1 - 이용안내*/
 
 
-#mainBox2 .itemBox1{
+#container1 .itemBox1{
     flex: 0.4;
     margin: 0px auto;
 }
 
-#mainBox2 .itemBox1 .information_logo img{
+#container1 .itemBox1 .logo{
     width: 250px;
-    margin: 10px 0px 30px;
+    margin: 0px 0px 10px;
 }
 
-#mainBox2 .itemBox1 .information{
+#container1 .itemBox1 .information{
     width: 350px;
     border: 1px solid #3B3838;
 
 }
 
-.information .information_title{
-    margin: 20px 0px;
-    font-family: 'sunflower';
-    font-size: 25px;
+.information .title{
+    margin: 15px 0px 0px;
 }
 
 .information .informationBox{
     display: flex;
-    margin: 15px;
+    margin: 0px 15px 10px;
     align-items: flex-end;    
 }
 
-.informationBox .information_text{
+.informationBox .text{
     text-align: left;
     font-family: "gyunggi-batang-bold";
     color: #3b3838;
     line-height: 130%;
 }
 
-.information_text span{
+.informationBox.text span{
     font-size: 20px;
     color: #BF9000;
 }
 
-.informationBox .information_text h2{
+.informationBox .text h2{
     font-size: 20px;
     color:#7C2119 ;
+    margin: 10px 0px;
 }
 
-.informationBox .information_img{
+.informationBox img{
 margin-left: 30px;
 }
 
-.informationBox .information_img img{
+.informationBox img{
     width: 150px;
 }
 
-#mainBox2 .itemBox2{
+#container1 .itemBox2{
     flex: 0.7;
-    margin: auto;
+    margin: 7px 0px 0px;
 }
 
-#mainBox2 .itemBox2 img{
+#container1 .itemBox2 img{
     width: 650px;
-
 }
 
 
-/*메인박스3 - 수원화성 소개*/
+/*메인박스2 - 수원화성 소개*/
 
-#mainBox3 .itemBox1{
+#container2 .itemBox1{
     flex: 0.6;
-    margin: 10px auto 0px;
-    padding-top: 20px;
+    margin: 0px auto;
     padding-right: 20px;
 }
 
-#mainBox3 .itemBox1 .introduce_title{
+#container2 .itemBox1 .title{
     margin: 10px 0px;
-    font-family: 'sunflower';
-    font-size: 25px;
     margin-bottom: 30px;
 }
 
-#mainBox3 .itemBox1 .introduceBox{
+#container2 .itemBox1 .introduceBox{
     border: 1px solid #3b3838;
     padding: 10px;
 }
 
-#mainBox3 .itemBox1 img{
+#container2 .itemBox1 img{
     width: 300px;
 }
 
-#mainBox3 .itemBox1 .introduce_text{
+#container2 .itemBox1 .introduceBox .text{
     text-align: left;
     font-size: 14px;
     font-family: 'gyunggi-title-L';
@@ -217,43 +223,41 @@ margin-left: 30px;
     padding: 10px;
 }
 
-#mainBox3 .itemBox2{
+#container2 .itemBox2{
 flex: 0.4;
 text-align: right;
 }
 
-#mainBox3 .itemBox2 img{
+#container2 .itemBox2 img{
     width: 400px;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 30px;
 }
 
-#mainBox3 .itemBox2 .introduce_text2{
+#container2 .itemBox2 .text{
     font-family: 'gyunggi-batang-bold';
     line-height: 135%;
     font-size: 15px;
 }
 
-#mainBox3 .itemBox2 .introduce_text2 span{
+#container2 .itemBox2 .text span{
     color: #BF9000;
 font-size: 16px;
 }
 
-/*메인박스4*/
+/*메인박스3 - 수원화성 곳곳*/
 
-#mainBox4{
-    margin-top: 70px;
-}
-
-.Tabs1_title{
+#container3 .title{
     flex: 0.15;
     text-align: center;
-    font-family: 'sunflower';
-    font-size: 25px;
-    margin: auto;
+    margin-top: auto;
     line-height: 180%;
     color: #3b3838;
+}
+
+#container3 .title img{
+    padding-top: 30px;
+    width: 100px;
 }
 
 #Tabs1{
@@ -264,12 +268,10 @@ flex: 0.85;
     font-family: 'sunflower';
     font-size: 16px;
     color: #3B3838;
-
 }
 
 .tabs{
     font-family: 'gyunggi-title-L';
-  
 }
 
 .tabs_img{
@@ -279,24 +281,23 @@ flex: 0.85;
 }
 
 .tabs .tabs_img img{
-
  width: 400px;
  height: 270px;
  border-radius: 20px;
 }
 
-.tabs_text{
+.tabs .text{
     flex: 0.5;
     margin-left: 20px;
     font-size: 15px;
     line-height: 140%;
 }
 
-.tabs_text h2{
-font-family: 'bookdu-chilsung';
-font-size: 40px;
-margin: 40px 0px 60px;
-color: #BF9000;
+.tabs .text h2{
+    font-family: 'bookdu-chilsung';
+    font-size: 40px;
+    margin: 40px 0px 60px;
+    color: #BF9000;
 }
 
 .tabs_btn{
@@ -307,4 +308,147 @@ color: #BF9000;
 
 .tabs_btn img{
     width: 150px;
+}
+
+/*메인박스4 - 스탬프 투어*/
+
+#container4{
+    text-align: center;
+}
+
+#container4 img{
+    width: 750px;
+    height: 550px;
+}
+
+#container4 .stamptourBox{
+    margin-left:  10px;
+
+}
+
+#container4 .stamptourBox .title{
+    line-height: 150%;
+    margin: 20px 0px 23px;
+}
+
+#container4 .stamptour{
+    border: 1px solid #3b3838;
+    font-family: 'gyunggi-title-L';
+    padding: 20px;
+    font-size: 17px;
+}
+
+#container4 .stamptourBox .stamptour .title{
+    margin: 0px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: #BF9000;
+    font-weight: bold;
+}
+
+#container4 ul{
+padding: 10px;
+list-style: none;
+margin: 0px;
+line-height: 130%;
+}
+
+#container4 ul li{
+    color: #525023;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#container4 span{
+    color: #7C2119;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*메인박스6 - 축제*/
+
+#container5{
+    font-family: 'gyunggi-title-L';
+}
+
+#container5 .festivalBox{
+    padding: 25px 20px;
+    border: 1px solid #3b3838;
+    text-align: center;
+    width: 1;
+    flex: 1;
+}
+
+#container5 .festivalBox .title span{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #7C2119;
+    font-weight: bold;
+}
+
+#container5 .festivalBox .title p{
+text-align: right;
+font-size: 15px;
+line-height: 150%;
+color: #3b3838;
+font-family: 'gyunggi-title-L'
+}
+
+.festivalBox .content{
+    margin-top: 20px;
+display: flex;
+}
+
+.festivalBox .content .video{
+    flex: 0.5;
+    padding-top: 20px;
+}
+
+.festivalBox .info{
+    flex: 0.5;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.festivalBox .info table,
+.festivalBox .info th,
+.festivalBox .info td{
+    border: 1px solid #525023;
+    border-collapse: collapse;
+    color: #3b3838;
+    margin: 0px auto;
+}
+
+.festivalBox .info caption{
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    color: #525023;
+}
+
+#container5 .festivalBox .info th{background-color: #f1f1f1;}
+
+#container5 .festivalBox .info th,
+#container5 .festivalBox .info td{
+    padding: 15px 20px;
+}
+
+#container5 .festivalBox_btn{
+    margin-top: 20px;
+}
+
+.goTopBtn{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.goTopBtn img{
+    width: 80px;
+}
+
+.bottom .line_deco{
+    margin-top: 0px;
+    width: 1000px;
 }
