@@ -1,2 +1,3 @@
-# Website2
-수원화성행궁동 - 웹저기 기말과제
+# [🌅 수원화성행궁](https://da-youn.github.io/SuwonHwasung-Hanggung/)
+수원화성행궁동 테마관 컨셉의 웹페이지 구현 
+(드림위버, jQuery 활용)
